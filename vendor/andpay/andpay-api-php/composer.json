@@ -1,0 +1,33 @@
+{
+    "name": "andpay/andpay-api-php",
+    "description": "Andpay API PHP SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "&pay",
+            "email": "support@andpay.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Andpay\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.4",
+        "php-http/client-common": "^2.3",
+        "php-http/discovery": "^1.12",
+        "psr/http-client": "^1.0",
+        "psr/http-client-implementation": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "php-http/curl-client": "^2.1",
+        "laminas/laminas-diactoros": "^2.4",
+        "symfony/var-dumper": "^5.1"
+    }
+}
