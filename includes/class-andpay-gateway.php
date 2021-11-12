@@ -86,10 +86,10 @@ class Andpay_Gateway extends WC_Payment_Gateway {
 
     public function admin_options() {
         ?>
-         <h2><?php echo $this->method_title; ?></h2>
+         <h2><?php echo esc_attr($this->method_title); ?></h2>
          <hr />
          <h3>Webhook support</h3>
-         <p>You must add the following webhook endpoint <code><?php echo get_site_url(null, "?wc-api=wc-andpay-webhook"); ?></code> to your <a href="https://andpay.io//user/api-tokens/" target="_blank">Andpay account settings</a>.
+         <p>You must add the following webhook endpoint <code><?php echo esc_url(get_site_url(null, "?wc-api=wc-andpay-webhook")); ?></code> to your <a href="https://andpay.io//user/api-tokens/" target="_blank">Andpay account settings</a>.
              This will enable you to receive notifications on the payment statusses.</p>
          <table class="form-table">
          <?php $this->generate_settings_html(); ?>
@@ -150,7 +150,7 @@ class Andpay_Gateway extends WC_Payment_Gateway {
 
         $payment = $json_data['data'];
 
-        $psp_ref = esc_attr($payment['payment_id']);
+        $psp_ref = sanitize_text_field($payment['payment_id']);
 
         $orders = wc_get_orders(array(
         	'meta_query'	=>	array(
@@ -185,8 +185,8 @@ class Andpay_Gateway extends WC_Payment_Gateway {
             throw new Exception ( $error_message );
         }
 
-        $key = esc_attr($_GET['key']);
-        $psp_ref = esc_attr($_GET['psp_ref']);
+        $key = sanitize_key(wp_unslash($_GET['key']));
+        $psp_ref = sanitize_text_field(wp_unslash($_GET['psp_ref']));
 
         $order_id = wc_get_order_id_by_order_key($key);
 
