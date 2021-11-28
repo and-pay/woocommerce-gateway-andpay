@@ -9,7 +9,7 @@
  * Plugin Name:       Andpay - Algo Payments
  * Plugin URI:        https://andpay.io/product-integrations/
  * Description:       The gateway for supporting Algo payments within your store, using Andpay and Algorand Blockchain. Algo, USDt, USDc, EURe, YLDY, Planets, Smile Coin.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Andpay
  * Author URI:        https://andpay.io/about/
  * Text Domain:       andpay
