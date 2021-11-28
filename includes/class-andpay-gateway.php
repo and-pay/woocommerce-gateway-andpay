@@ -89,7 +89,7 @@ class Andpay_Gateway extends WC_Payment_Gateway {
          <h2><?php echo esc_attr($this->method_title); ?></h2>
          <hr />
          <h3>Webhook support</h3>
-         <p>You must add the following webhook endpoint <code><?php echo esc_url(get_site_url(null, "?wc-api=wc-andpay-webhook")); ?></code> to your <a href="https://andpay.io//user/api-tokens/" target="_blank">Andpay account settings</a>.
+         <p>You must add the following webhook endpoint <code><?php echo esc_url(get_site_url(null, "?wc-api=wc-andpay-webhook")); ?></code> to your <a href="https://andpay.io/user/api-tokens/" target="_blank">Andpay account settings</a>.
              This will enable you to receive notifications on the payment statusses.</p>
          <table class="form-table">
          <?php $this->generate_settings_html(); ?>
@@ -272,7 +272,17 @@ class Andpay_Gateway extends WC_Payment_Gateway {
     }
 
     function add_gateway_class( $methods ) {
-        $methods[] = 'Andpay_Gateway';
+        $currency = get_woocommerce_currency();
+        $supported_currency = Andpay_Currencies_Helper::get_supported_currency($currency);
+
+        if($supported_currency || is_admin()) {
+            $methods[] = 'Andpay_Gateway';
+        }
+
+        if(!$supported_currency) {
+            WC_Admin_Settings::add_error(__("It seems that the currency configured for your store isn't supported by Algo Payments. Head over to Woocommerce > Settings and adjust the currency to one of the supported currencies.", "andpay"));
+        }
+
         return $methods;
     }
 
