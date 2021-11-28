@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @see       https://github.com/laminas/laminas-diactoros for the canonical source repository
+ * @copyright https://github.com/laminas/laminas-diactoros/blob/master/COPYRIGHT.md
+ * @license   https://github.com/laminas/laminas-diactoros/blob/master/LICENSE.md New BSD License
+ */
+
 declare(strict_types=1);
 
 namespace Laminas\Diactoros;
@@ -97,9 +103,6 @@ class CallbackStream implements StreamInterface
 
     /**
      * {@inheritdoc}
-     * @param int $offset
-     * @param int $whence
-     * @return void
      */
     public function seek($offset, $whence = SEEK_SET)
     {

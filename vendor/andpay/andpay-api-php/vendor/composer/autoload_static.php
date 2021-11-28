@@ -4,9 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1
+class ComposerStaticInit9600f865b69c0e6fea8e41739e314f49
 {
     public static $files = array (
+        '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '07d7f1a47144818725fd8d91a907ac57' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/create_uploaded_file.php',
         'da94ac5d3ca7d2dbab84ce561ce72bfd' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/marshal_headers_from_sapi.php',
@@ -48,6 +49,7 @@ class ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1
         ),
         'L' => 
         array (
+            'Laminas\\ZendFrameworkBridge\\' => 28,
             'Laminas\\Diactoros\\' => 18,
         ),
         'H' => 
@@ -98,6 +100,10 @@ class ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1
         'Psr\\Http\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'Laminas\\ZendFrameworkBridge\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src',
         ),
         'Laminas\\Diactoros\\' => 
         array (
@@ -150,9 +156,9 @@ class ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit51ac8725d21d95a51c5b0b5e59ea4cf1::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9600f865b69c0e6fea8e41739e314f49::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9600f865b69c0e6fea8e41739e314f49::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit9600f865b69c0e6fea8e41739e314f49::$classMap;
 
         }, null, ClassLoader::class);
     }
