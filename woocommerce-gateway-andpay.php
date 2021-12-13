@@ -2,7 +2,7 @@
 /**
  *
  * @link              https://andpay.io/about/
- * @since             1.0.0
+ * @since             1.0.2
  * @package           Woocommerce Gateway Andpay
  *
  * @wordpress-plugin
