@@ -61,6 +61,10 @@ class ComposerStaticInit9600f865b69c0e6fea8e41739e314f49
             'Http\\Client\\Common\\' => 19,
             'Http\\Client\\' => 12,
         ),
+        'D' => 
+        array (
+            'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 55,
+        ),
         'C' => 
         array (
             'Clue\\StreamFilter\\' => 18,
@@ -133,6 +137,10 @@ class ComposerStaticInit9600f865b69c0e6fea8e41739e314f49
         'Http\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-http/httplug/src',
+        ),
+        'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
         'Clue\\StreamFilter\\' => 
         array (

@@ -10,7 +10,7 @@ use Andpay\Exception\MissingArgumentException;
 
 final class Currencies
 {
-    private Client $client;
+    private $client;
 
     public function __construct(Client $client)
     {

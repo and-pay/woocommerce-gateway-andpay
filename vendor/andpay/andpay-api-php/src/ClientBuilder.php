@@ -16,13 +16,13 @@ use Psr\Http\Message\StreamFactoryInterface;
 
 final class ClientBuilder
 {
-    private ClientInterface $httpClient;
+    private $httpClient;
 
-    private RequestFactoryInterface $requestFactoryInterface;
+    private $requestFactoryInterface;
 
-    private StreamFactoryInterface $streamFactoryInterface;
+    private $streamFactoryInterface;
 
-    private array $plugins = [];
+    private $plugins = [];
 
     public function __construct(
         ClientInterface $httpClient = null,

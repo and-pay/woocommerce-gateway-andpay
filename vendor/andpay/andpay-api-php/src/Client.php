@@ -14,8 +14,8 @@ use Http\Message\UriFactory;
 
 final class Client
 {
-    private ClientBuilder $clientBuilder;
-    private string $accessToken;
+    private $clientBuilder;
+    private $accessToken;
 
     public function __construct($accessToken = null, ClientBuilder $clientBuilder = null, UriFactory $uriFactory = null)
     {
