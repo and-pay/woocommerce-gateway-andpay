@@ -5,7 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "&pay",
+            "name": "Andpay",
             "email": "support@andpay.io"
         }
     ],
@@ -17,23 +17,21 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.2.5"
+            "php": "7.1"
         }
     },
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.1",
+        "php-http/curl-client": "^2.1",
         "symfony/polyfill-mbstring": "1.20.0",
         "php-http/client-common": "^2.3",
         "php-http/discovery": "^1.12",
         "psr/http-client": "^1.0",
         "psr/http-client-implementation": "^1.0",
-        "psr/http-factory": "^1.0"
+        "psr/http-factory": "^1.0",
+        "laminas/laminas-diactoros": "^2.4"
     },
     "require-dev": {
-        "php-http/curl-client": "^2.1",
-        "laminas/laminas-diactoros": "^2.4",
-        "symfony/var-dumper": "^5.1",
-        "phpcompatibility/php-compatibility": "*",
-        "dealerdirect/phpcodesniffer-composer-installer": "*"
+
     }
 }

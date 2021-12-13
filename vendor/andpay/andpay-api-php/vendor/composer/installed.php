@@ -7,7 +7,7 @@
         'aliases' => array(),
         'reference' => '9f4fe0d0fc4adc810ca919ef3ee90075078733db',
         'name' => 'andpay/andpay-api-php',
-        'dev' => true,
+        'dev' => false,
     ),
     'versions' => array(
         'andpay/andpay-api-php' => array(
@@ -28,15 +28,6 @@
             'reference' => 'aeb7d8ea49c7963d3b581378955dbf5bc49aa320',
             'dev_requirement' => false,
         ),
-        'dealerdirect/phpcodesniffer-composer-installer' => array(
-            'pretty_version' => 'v0.7.1',
-            'version' => '0.7.1.0',
-            'type' => 'composer-plugin',
-            'install_path' => __DIR__ . '/../dealerdirect/phpcodesniffer-composer-installer',
-            'aliases' => array(),
-            'reference' => 'fe390591e0241955f22eb9ba327d137e501c771c',
-            'dev_requirement' => true,
-        ),
         'laminas/laminas-diactoros' => array(
             'pretty_version' => '2.4.1',
             'version' => '2.4.1.0',
@@ -44,7 +35,7 @@
             'install_path' => __DIR__ . '/../laminas/laminas-diactoros',
             'aliases' => array(),
             'reference' => '36ef09b73e884135d2059cc498c938e90821bb57',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'laminas/laminas-zendframework-bridge' => array(
             'pretty_version' => '1.1.1',
@@ -53,7 +44,7 @@
             'install_path' => __DIR__ . '/../laminas/laminas-zendframework-bridge',
             'aliases' => array(),
             'reference' => '6ede70583e101030bcace4dcddd648f760ddf642',
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'php-http/async-client-implementation' => array(
             'dev_requirement' => false,
@@ -62,12 +53,12 @@
             ),
         ),
         'php-http/client-common' => array(
-            'pretty_version' => '2.5.0',
-            'version' => '2.5.0.0',
+            'pretty_version' => '2.4.0',
+            'version' => '2.4.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../php-http/client-common',
             'aliases' => array(),
-            'reference' => 'd135751167d57e27c74de674d6a30cef2dc8e054',
+            'reference' => '29e0c60d982f04017069483e832b92074d0a90b2',
             'dev_requirement' => false,
         ),
         'php-http/client-implementation' => array(
@@ -136,15 +127,6 @@
             'reference' => '4c4c1f9b7289a2ec57cde7f1e9762a5789506f88',
             'dev_requirement' => false,
         ),
-        'phpcompatibility/php-compatibility' => array(
-            'pretty_version' => '9.3.5',
-            'version' => '9.3.5.0',
-            'type' => 'phpcodesniffer-standard',
-            'install_path' => __DIR__ . '/../phpcompatibility/php-compatibility',
-            'aliases' => array(),
-            'reference' => '9fb324479acf6f39452e0655d2429cc0d3914243',
-            'dev_requirement' => true,
-        ),
         'psr/http-client' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -170,7 +152,7 @@
             'dev_requirement' => false,
         ),
         'psr/http-factory-implementation' => array(
-            'dev_requirement' => true,
+            'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0',
             ),
@@ -185,36 +167,18 @@
             'dev_requirement' => false,
         ),
         'psr/http-message-implementation' => array(
-            'dev_requirement' => true,
+            'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0',
             ),
         ),
-        'squizlabs/php_codesniffer' => array(
-            'pretty_version' => '3.6.1',
-            'version' => '3.6.1.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
-            'aliases' => array(),
-            'reference' => 'f268ca40d54617c6e06757f83f699775c9b3ff2e',
-            'dev_requirement' => true,
-        ),
-        'symfony/deprecation-contracts' => array(
-            'pretty_version' => 'v2.5.0',
-            'version' => '2.5.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
-            'aliases' => array(),
-            'reference' => '6f981ee24cf69ee7ce9736146d1c57c2780598a8',
-            'dev_requirement' => false,
-        ),
         'symfony/options-resolver' => array(
-            'pretty_version' => 'v5.4.0',
-            'version' => '5.4.0.0',
+            'pretty_version' => 'v3.4.47',
+            'version' => '3.4.47.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/options-resolver',
             'aliases' => array(),
-            'reference' => 'b0fb78576487af19c500aaddb269fd36701d4847',
+            'reference' => 'c7efc97a47b2ebaabc19d5b6c6b50f5c37c92744',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-mbstring' => array(
@@ -226,15 +190,6 @@
             'reference' => '39d483bdf39be819deabf04ec872eb0b2410b531',
             'dev_requirement' => false,
         ),
-        'symfony/polyfill-php73' => array(
-            'pretty_version' => 'v1.23.0',
-            'version' => '1.23.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-php73',
-            'aliases' => array(),
-            'reference' => 'fba8933c384d6476ab14fb7b8526e5287ca7e010',
-            'dev_requirement' => false,
-        ),
         'symfony/polyfill-php80' => array(
             'pretty_version' => 'v1.23.1',
             'version' => '1.23.1.0',
@@ -244,17 +199,8 @@
             'reference' => '1100343ed1a92e3a38f9ae122fc0eb21602547be',
             'dev_requirement' => false,
         ),
-        'symfony/var-dumper' => array(
-            'pretty_version' => 'v5.4.1',
-            'version' => '5.4.1.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/var-dumper',
-            'aliases' => array(),
-            'reference' => '2366ac8d8abe0c077844613c1a4f0c0a9f522dcc',
-            'dev_requirement' => true,
-        ),
         'zendframework/zend-diactoros' => array(
-            'dev_requirement' => true,
+            'dev_requirement' => false,
             'replaced' => array(
                 0 => '^2.2.1',
             ),
