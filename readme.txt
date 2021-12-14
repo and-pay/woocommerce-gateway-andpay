@@ -4,7 +4,7 @@ Donate link: https://andpay.io/p/e337d65e3c5e4b47ba19054db1c0c13b
 Tags: algorand payments, algopay, algorand blockchain, algorand, yldy, usdt, usdc, andpay, payment service, blockchain
 Requires at least: 5.0
 Tested up to: 5.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -56,6 +56,9 @@ We currently do support the most popular ones: Algo, YLDY, USDt, USDc, EURe, Pla
 Yes, please check out [andpay.io/docs/](https://andpay.io/docs/1.0/integrations/woocommerce) for more information and support installing Algo Payments for Woocommerce.
 
 == Changelog ==
+
+= 1.0.3 =
+* [Fix] Fix on displaying thousands (numeric) value correctly.
 
 = 1.0.2 =
 * [Fix] Fixed issues on PHP 7.1

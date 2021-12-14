@@ -42,7 +42,7 @@ class Andpay_Currencies {
 
     public function formatted_woocommerce_price( $price, $product ) {
         if($supported_currency = $this->is_andpay_supported_currency()) {
-            return (float)$price;
+            return (float)preg_replace('/[^\d.]/', '', $price);
         }
     }
 
